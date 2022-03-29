@@ -17,3 +17,8 @@ helmCharts:
   version: v1.7.2
   releaseName: my-cert-manager
   namespace: cert-manager
+- name: plex
+  repo: https://k8s-at-home.com/charts/
+  version: v6.2.0
+  releaseName: my-plex
+  namespace: plex
