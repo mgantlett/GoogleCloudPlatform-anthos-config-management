@@ -12,11 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 helmCharts:
-- name: cert-manager
-  repo: https://charts.jetstack.io
-  version: v1.7.2
-  releaseName: my-cert-manager
-  namespace: cert-manager
+# - name: cert-manager
+#   repo: https://charts.jetstack.io
+#   version: v1.7.2
+#   releaseName: my-cert-manager
+#   namespace: cert-manager
 - name: plex
   repo: https://k8s-at-home.com/charts/
   version: v6.2.0
