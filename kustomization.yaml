@@ -12,11 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# [START anthosconfig_automated_rendering_ignore_deployment_mutation_patch_deployment_any]
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: any
-  annotations:
-    client.lifecycle.config.k8s.io/mutation: ignore
-# [END anthosconfig_automated_rendering_ignore_deployment_mutation_patch_deployment_any]
+# [START anthosconfig_helm_component_automated_rendering_kustomization_yaml]
+resources:
+- base
+
+patches:
+- path: ignore-deployment-mutation-patch.yaml
+  target:
+    kind: Deployment
+# [END anthosconfig_helm_component_automated_rendering_kustomization_yaml]
